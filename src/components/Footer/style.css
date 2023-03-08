@@ -1,0 +1,24 @@
+.footer {
+    height:10vh;
+    background: linear-gradient(90deg, #D3D3D3 0%,  #7F8C8D 100%);
+    position:fixed;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    border-top: 5px solid #030004;
+}
+.footer-ul{
+    list-style-type: none;
+    display: inline;
+    /* margin-left: 50px; */
+    
+}
+.footer-li{
+    float:left;
+    margin-left: 30%;
+}
+.footer-a{
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}

@@ -1,0 +1,22 @@
+.contact-box {
+    display: flex;
+    background:linear-gradient(90deg, #28313B 0%,  #485461 100%);
+    justify-content: center;
+    width:70%;
+    margin:auto;
+    margin-top: 40px;
+    border-radius: 5px;
+    color:white;
+}
+.contact-form-box{
+margin: 20px;
+
+}
+.contactId {
+    text-align: right;
+}
+/* @ media only screen and (min-width:850px){
+    .contact-box {
+
+    }
+} */

@@ -1,0 +1,27 @@
+.ul-resume {
+    list-style-type: circle;
+    /* display: block;
+    float:left; */
+   
+}
+.resume-list {
+    display:flex;
+    
+    border: 3px solid grey;
+    
+    width:30%; border: 3px solid grey;
+    
+    width:30%;
+}
+.resume-box {
+    /* display: flex; */
+    /* background:linear-gradient(90deg, #28313B 0%,  #485461 100%); */
+    /* justify-content: start; */
+    /* width:70%; */
+    margin:auto;
+    /* color:white; */
+}
+
+.front-end{
+
+}

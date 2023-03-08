@@ -1,0 +1,30 @@
+
+header{
+    height: 15vh;
+    background:linear-gradient(90deg, #7F8C8D 0%,  #D3D3D3 100%);
+    border-bottom: 5px solid #030004;
+   
+}
+.header-name{
+    float:left;
+}
+.ul-nav {
+    list-style-type: none;
+    display: inline;
+    /* margin-left: 50px; */
+    float:right
+}
+.li-nav {
+    float: left;
+   
+}
+.a-nav {
+    /* display: block; */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+li a:hover {
+    background-color: #B191B6;
+}

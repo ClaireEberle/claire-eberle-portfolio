@@ -1,7 +1,7 @@
 .footer {
     height:10vh;
     background: linear-gradient(90deg, #D3D3D3 0%,  #7F8C8D 100%);
-    position:fixed;
+    /* position:fixed; */
     bottom:0;
     width:100%;
     text-align: center;

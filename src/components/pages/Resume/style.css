@@ -7,11 +7,12 @@
 .resume-list {
     display:flex;
     
+    
+    width:50%; 
     border: 3px solid grey;
     
-    width:30%; border: 3px solid grey;
-    
-    width:30%;
+
+    margin-bottom: 5%;
 }
 .resume-box {
     /* display: flex; */
@@ -22,6 +23,12 @@
     /* color:white; */
 }
 
-.front-end{
-
+.resumeButton{
+    border:none;
+    background: none;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    color: blue
 }

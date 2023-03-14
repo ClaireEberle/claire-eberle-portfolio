@@ -1,8 +1,19 @@
 import React from 'react'
+import "./style.css"
+import  profilePicture  from '../../../images/headShot.png'
 
+
+
+const styleCard = {
+  width:"200px",
+height:"260px",
+marginLeft: "1%",
+marginTop: "3%"
+}
 export const About = () => {
   return (
-    <div>
+    <div className='about'>
+      <img style={styleCard} src={profilePicture} alt="Claire Eberle"></img>
 
     <h1>About Me</h1> 
     <p>

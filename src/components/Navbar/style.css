@@ -28,3 +28,7 @@ header{
 li a:hover {
     background-color: #B191B6;
 }
+
+.active {
+    background-color: #B191B6;
+}

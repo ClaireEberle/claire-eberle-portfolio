@@ -7,7 +7,7 @@ export const Navbar = ({currentPage, handlePageChange}) => {
 <header>
 <h1 className="header-name">Claire Eberle</h1>
 <ul className="ul-nav">
-    <li className="li-nav">
+    <li className={currentPage === 'About' ? 'li-nav active' : 'li-nav '}>
         <a className="a-nav"
         href="#about"
         onClick={() => handlePageChange("About")}
@@ -18,18 +18,18 @@ export const Navbar = ({currentPage, handlePageChange}) => {
             About
         </a>
     </li>
-    <li className="li-nav">
+    <li className={currentPage === 'Portfolio' ? 'li-nav active' : 'li-nav '}>
         <a className="a-nav"
         href="#portfolio"
         onClick={() => handlePageChange("Portfolio")}
         
-        
+       
         >
 
             Portfolio
         </a>
     </li>
-    <li className="li-nav">
+    <li className={currentPage === 'Resume' ? 'li-nav active' : 'li-nav '}>
         <a className="a-nav"
         href="#resume"
         onClick={() => handlePageChange("Resume")}
@@ -40,7 +40,7 @@ export const Navbar = ({currentPage, handlePageChange}) => {
             Resume
         </a>
     </li>
-    <li className="li-nav">
+    <li className={currentPage === 'Contact' ? 'li-nav active' : 'li-nav '}>
         <a className="a-nav"
         href="#contact"
         onClick={() => handlePageChange("Contact")}

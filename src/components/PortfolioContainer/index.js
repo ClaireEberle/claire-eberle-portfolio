@@ -10,17 +10,22 @@ import { Cards } from "../Cards"
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("About");
-  const [nameForm, setName] = useState("");
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState('')
+  const [blank, setBlank] = useState({
+    name: false,
+    email: false,
+    message: false,
+  });
 
   const handleFormChange = (e) => {
     const inputType = e.target.name;
     const inputValue = e.target.value;
     
 
-    if (inputType === "nameForm") {
+    if (inputType === "name") {
       setName(inputValue);
     }
     if (inputType === "email") {
@@ -29,6 +34,22 @@ export default function PortfolioContainer() {
     if (inputType === "message") {
       setMessage(inputValue);
     }
+    setBlank({...blank, [inputType]:false})
+    console.log(blank)
+  };
+
+  
+
+  const handleLoseFocus = (e) => {
+    const field = e.target.name
+    const value = e.target.value
+    console.log(`lost focus of ${e.target.name}`);
+    if(value ==""){
+      setBlank({...blank, [field]:true})
+    }
+      console.log(blank)
+      console.log(field)
+  
   };
 
 const handleFormSubmit = (e) => {
@@ -38,7 +59,7 @@ const handleFormSubmit = (e) => {
       `Please enter a valid email address`
     );
   }
-  if(!nameForm){
+  if(!name){
     setErrorMessage(
       `Please enter a name`
     )
@@ -54,7 +75,7 @@ const handleFormSubmit = (e) => {
 
   const renderPage = () => {
     if (currentPage === "About") {
-      return <About />;
+      return <About />; 
     }
     if (currentPage === "Portfolio") {
       return <Portfolio />;
@@ -63,7 +84,7 @@ const handleFormSubmit = (e) => {
       return <Resume />;
     }
 
-    return <Contact handleFormChange={handleFormChange} nameForm={nameForm} email={email} message={message} handleFormSubmit={handleFormSubmit} errorMessage={errorMessage}/>;
+    return <Contact handleFormChange={handleFormChange} blank={blank} handleLoseFocus={handleLoseFocus} name={name} email={email} message={message} handleFormSubmit={handleFormSubmit} errorMessage={errorMessage}/>;
   };
   const handlePageChange = (page) => setCurrentPage(page);
 

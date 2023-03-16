@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { Cards } from "../../Cards"
+import jolly from  "../../../images/jolly.png"
 import stream from "../../../images/stream.png"
 import saveSeat from "../../../images/saveSeat.png"
 import popQuiz from "../../../images/popQuiz.png"
@@ -13,11 +14,18 @@ export const Portfolio = () => {
 
   const [projects, setProjects] = useState([
     {
+      "image": jolly,
+      "title":"Jolly Co-op",
+      "description":"Project 3",
+      "linkGithub": "https://github.com/CaldwellDerek/jolly-co-op-frontend",
+      "linkSite":"https://jollycoop.netlify.app/"
+    },
+    {
       "image": stream,
       "title":"Streamasaurus",
-      "description":"This project is d***",
-      "linkGithub": "/",
-      "linkSite":"/"
+      "description":"Project 1",
+      "linkGithub": "https://github.com/wabarringer/project-1",
+      "linkSite":"https://wabarringer.github.io/project-1/"
     },
     {
       "image": saveSeat,
@@ -47,15 +55,8 @@ export const Portfolio = () => {
       "linkGithub": "https://github.com/ClaireEberle/Weather-Tracker",
       "linkSite":"https://claireeberle.github.io/Weather-Tracker/"
       
-    },
-    {
-      "image": mountains,
-      "title":"README Generator",
-      "description":"This project needs improvement",
-      "linkGithub": "https://github.com/ClaireEberle/README-Generator",
-
-      
-    },
+    }
+    
   ])
   return (
     <div>

@@ -17,16 +17,9 @@ export const About = () => {
 
     <h1>About Me</h1> 
     <p>
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
+    I am a Full Stack Web Developer with a background in Environmental Toxicology.
+I am a graduate of the University of Washington's Full Stack Web Development Certificate Program. I am interested in Web Developer and Junior Software Development roles at the intersection of technology and Environmental Science.
+I am a creative, thorough problem-solver with a ready-to-learn attitude, and a passion for utility, beauty, and a positive user experience.
     </p>
     </div>
   )

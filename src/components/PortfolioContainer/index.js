@@ -69,6 +69,18 @@ const handleFormSubmit = (e) => {
     'Please enter a message'
     )
   }
+  axios({
+    method: "POST",
+    url: "/send",
+    data: ({ name, email, message})
+  }).then ((response)=>{
+    if (response.data.status === 'success'){
+      alert("Message Sent.");
+      
+    }else if(response.data.status === 'fail'){
+      alert("Message failed to send.")
+    }
+  })
   console.log("Submitted")
   
 }

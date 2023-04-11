@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/claire-eberle-portfolio/static/css/main.d7b29f56.css",
-    "main.js": "/claire-eberle-portfolio/static/js/main.b93cabd0.js",
+    "main.js": "/claire-eberle-portfolio/static/js/main.549a2040.js",
     "static/media/saveSeat.png": "/claire-eberle-portfolio/static/media/saveSeat.33d2bb06f514f127b666.png",
     "static/media/popQuiz.png": "/claire-eberle-portfolio/static/media/popQuiz.73c7a8cabcdf94d997d4.png",
     "static/media/headShot.png": "/claire-eberle-portfolio/static/media/headShot.f4c613e7ffb581aef129.png",
     "static/media/stream.png": "/claire-eberle-portfolio/static/media/stream.61d9e9fecfbe13529acf.png",
     "static/media/weather.png": "/claire-eberle-portfolio/static/media/weather.d23f7a6a66a48538045d.png",
+    "static/media/jolly.png": "/claire-eberle-portfolio/static/media/jolly.c939a79f45861c62ac52.png",
     "static/media/techspot.png": "/claire-eberle-portfolio/static/media/techspot.13153a7754c276cb0c28.png",
     "static/media/mountains.jpg": "/claire-eberle-portfolio/static/media/mountains.7065ba3615e35030e7b6.jpg",
     "index.html": "/claire-eberle-portfolio/index.html",
     "main.d7b29f56.css.map": "/claire-eberle-portfolio/static/css/main.d7b29f56.css.map",
-    "main.b93cabd0.js.map": "/claire-eberle-portfolio/static/js/main.b93cabd0.js.map"
+    "main.549a2040.js.map": "/claire-eberle-portfolio/static/js/main.549a2040.js.map"
   },
   "entrypoints": [
     "static/css/main.d7b29f56.css",
-    "static/js/main.b93cabd0.js"
+    "static/js/main.549a2040.js"
   ]
 }

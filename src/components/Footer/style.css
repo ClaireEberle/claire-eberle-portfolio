@@ -1,24 +1,30 @@
 .footer {
     height:10vh;
-    background: linear-gradient(90deg, #D3D3D3 0%,  #7F8C8D 100%);
+    background: linear-gradient(90deg, #f7c87c 0%,  #f5b668 100%);
     /* position:fixed; */
     bottom:0;
     width:100%;
     text-align: center;
     border-top: 5px solid #030004;
 }
+.footer-nav {
+    text-align: center;
+    margin-top: 20px;
+}
 .footer-ul{
     list-style-type: none;
-    display: inline;
+    display: inline-block;
     /* margin-left: 50px; */
     
 }
 .footer-li{
     float:left;
-    margin-left: 30%;
+    /* margin-left: 30%; */
+    font-size: 25px;;
 }
 .footer-a{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    color: white;
 }

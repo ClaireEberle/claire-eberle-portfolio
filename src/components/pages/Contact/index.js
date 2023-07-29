@@ -14,9 +14,12 @@ export const Contact = ({
   
 
   return (
+    <div className="contact-container">
+
     <div className="contact-box">
       <h1 className="contact-form-box contactId">Contact me:</h1>
-      <form className="contact-form-box" onSubmit={handleFormSubmit}>
+      <form className="contact-form-box" onSubmit={handleFormSubmit}
+      method="POST">
         <label for="name">Name:</label>
         <br />
         <input
@@ -25,9 +28,9 @@ export const Contact = ({
           onBlur={handleLoseFocus}
           value={nameForm}
           onChange={handleFormChange}
-        />
+          />
         { blank.name ? (
-        <p>
+          <p>
           please enter your name
         </p>
 ) : (null)}
@@ -40,9 +43,9 @@ export const Contact = ({
           value={email}
           onChange={handleFormChange}
           onBlur={handleLoseFocus}
-        />
+          />
          { blank.email ? (
-        <p>
+           <p>
           please enter your email
         </p>
 ) : (null)}
@@ -57,16 +60,17 @@ export const Contact = ({
           value={message}
           onChange={handleFormChange}
           onBlur={handleLoseFocus}
-        />
+          />
          { blank.message ? (
-        <p>
+           <p>
           please enter a message
         </p>
 ) : (null)}
         <br />
-        <button>Submit</button>
+        <button className="button-33">Submit</button>
       </form>
-      <p>{errorMessage}</p>
+      {/* <p>{errorMessage}</p> */}
     </div>
+</div>
   );
 };

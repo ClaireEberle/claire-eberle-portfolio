@@ -22,7 +22,8 @@ export const Resume  = () => {
     <div className='resume-box'> 
       <h2>You may download my resume here:</h2>
       <button className='resumeButton' onClick={resumeBtn}>Resume</button>
-      
+      <div className='resume-containers'>
+
       <div className='resume-list'>
 
       <h4>Front-end Proficiencies</h4>
@@ -47,6 +48,7 @@ export const Resume  = () => {
         <li>REST</li>
         <li>GraphQL</li>
       </ul>
+      </div>
       </div>
        </div>
   )

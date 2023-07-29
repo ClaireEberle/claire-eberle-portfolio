@@ -5,6 +5,7 @@ import { About } from "../pages/About";
 import { Portfolio } from "../pages/Portfolio";
 import { Resume } from "../pages/Resume";
 import { Contact } from "../pages/Contact";
+import { Home } from "../pages/Home";
 import { validateEmail } from "../../utils/helpers";
 import { Cards } from "../Cards"
 
@@ -69,11 +70,26 @@ const handleFormSubmit = (e) => {
     'Please enter a message'
     )
   }
-  console.log("Submitted")
+  // axios({
+  //   method: "POST",
+  //   url: "/send",
+  //   data: ({ name, email, message})
+  // }).then ((response)=>{
+  //   if (response.data.status === 'success'){
+  //     alert("Message Sent.");
+      
+  //   }else if(response.data.status === 'fail'){
+  //     alert("Message failed to send.")
+  //   }
+  // })
+  // console.log("Submitted")
   
 }
 
   const renderPage = () => {
+    if (currentPage === "Home") {
+      return <Home />;
+    }
     if (currentPage === "About") {
       return <About />; 
     }

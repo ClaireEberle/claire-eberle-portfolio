@@ -1,18 +1,35 @@
 
+/* @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Caveat&family=Fasthand&display=swap'); */
+
 header{
-    height: 15vh;
-    background:linear-gradient(90deg, #7F8C8D 0%,  #D3D3D3 100%);
+    height: 75vh;
+    /* background:linear-gradient(90deg, #7F8C8D 0%,  #D3D3D3 100%); */
+     background-image: url("../../images/background1.png");
+    background-size: cover;
     border-bottom: 5px solid #030004;
+    background-attachment: fixed;
+    
    
 }
 .header-name{
-    float:left;
+    text-align: center;
+    font-weight: 200px;
+    font-size: 75px;
+    
+    
+}
+.name-link {
+    text-decoration: none;
+    color: white;
+}
+.nav-container {
+    text-align: center;
 }
 .ul-nav {
     list-style-type: none;
-    display: inline;
+    display: inline-block;
     /* margin-left: 50px; */
-    float:right
+    
 }
 .li-nav {
     float: left;
@@ -23,12 +40,13 @@ header{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    color: white;
 
 }
 li a:hover {
-    background-color: #B191B6;
+    background-color:linear-gradient(90deg, #28313B 0%,  #485461 100%);
 }
 
 .active {
-    background-color: #B191B6;
+    background-color: #28313B;
 }

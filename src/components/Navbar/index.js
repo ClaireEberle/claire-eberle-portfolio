@@ -5,7 +5,14 @@ import './style.css';
 export const Navbar = ({currentPage, handlePageChange}) => {
   return (
 <header>
-<h1 className="header-name">Claire Eberle</h1>
+<h1 className="header-name"> <a className='name-link' 
+href='#home' 
+onClick={() => handlePageChange("Home")}>
+    Claire Eberle
+    </a>
+    </h1>
+<div className='nav-container'>
+
 <ul className="ul-nav">
     <li className={currentPage === 'About' ? 'li-nav active' : 'li-nav '}>
         <a className="a-nav"
@@ -23,7 +30,7 @@ export const Navbar = ({currentPage, handlePageChange}) => {
         href="#portfolio"
         onClick={() => handlePageChange("Portfolio")}
         
-       
+        
         >
 
             Portfolio
@@ -45,13 +52,14 @@ export const Navbar = ({currentPage, handlePageChange}) => {
         href="#contact"
         onClick={() => handlePageChange("Contact")}
         
-       
+        
         >
 
             Contact
         </a>
     </li>
    </ul>
+            </div>
             </header>
   )
 }

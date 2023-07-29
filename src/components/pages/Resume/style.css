@@ -4,13 +4,22 @@
     float:left; */
    
 }
+.resume-containers {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+   margin: auto
+}
+
 .resume-list {
     display:flex;
+    justify-content: center;
+    align-content: center;
     
     
     width:50%; 
     border: 3px solid grey;
-    
+    margin: auto;
 
     margin-bottom: 5%;
 }
@@ -19,9 +28,12 @@
     /* background:linear-gradient(90deg, #28313B 0%,  #485461 100%); */
     /* justify-content: start; */
     /* width:70%; */
+    text-align: center;
     margin:auto;
     /* color:white; */
+    background-color: white;
 }
+
 
 .resumeButton{
     border:none;

@@ -1,11 +1,12 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Caveat&family=Fasthand&family=Noto+Sans+Vithkuqi&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Noto Sans Vithkuqi', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background:  linear-gradient(90deg, #8CACAC 0%,  #AF8C9D 100%);
+  background:  linear-gradient(90deg, #f4d493 0%,  #f2be91 100%);
 }
 
 code {

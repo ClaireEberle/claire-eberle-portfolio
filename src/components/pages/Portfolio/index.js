@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import "./style.css"
 import { Cards } from "../../Cards"
 import jolly from  "../../../images/jolly.png"
 import stream from "../../../images/stream.png"
@@ -59,9 +60,9 @@ export const Portfolio = () => {
     
   ])
   return (
-    <div>
-      <h1>Portfolio</h1>
-      <div className='container-fluid'>
+    <div className='portfolio-div'>
+      <h1 className='portfolio-head'>Portfolio</h1>
+      <div className='container-fluid gallery'>
 
       <div className='row'>
 

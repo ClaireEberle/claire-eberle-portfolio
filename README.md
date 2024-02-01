@@ -2,7 +2,8 @@
     
 https://claireeberle.github.io/claire-eberle-portfolio/
 
-![Screenshot 2023-03-13 at 7 57 13 PM](https://user-images.githubusercontent.com/116858582/224881468-4480279a-ea4b-4140-9cb9-b72b0e60d3d7.png)
+<img width="869" alt="Screenshot 2024-02-01 at 11 16 46 AM" src="https://github.com/ClaireEberle/claire-eberle-portfolio/assets/116858582/07f09a3a-d266-4259-871e-db3dc3bfd702">
+
 
 
 This site is a portfolio I have created to showcase my previous projects, provide some information about myself, and a page to contact me. In the Portfolio tab there is also an option to download my current resume. This site was created using React. 

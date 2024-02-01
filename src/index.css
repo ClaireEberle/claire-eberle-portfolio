@@ -6,7 +6,8 @@ body {
   font-family: 'Noto Sans Vithkuqi', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background:  linear-gradient(90deg, #f4d493 0%,  #f2be91 100%);
+  background:  linear-gradient(90deg, #e0dfdef4 0%,  #aaa9a9 100%);
+
 }
 
 code {

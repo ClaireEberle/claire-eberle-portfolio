@@ -26,7 +26,7 @@ export const Portfolio = () => {
       "title":"Streamasaurus",
       "description":"Project 1",
       "linkGithub": "https://github.com/wabarringer/project-1",
-      "linkSite":"https://wabarringer.github.io/project-1/"
+      "linkSite":"https://claireeberle.github.io/Streamosaurus/"
     },
     {
       "image": saveSeat,

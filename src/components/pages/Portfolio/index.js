@@ -46,7 +46,7 @@ export const Portfolio = () => {
       "image": techspot,
       "title":"Tech Blog",
       "description":"This project needs improvement",
-      "linkGithub": "https://github.com/ClaireEberle/New-Mexico-Pop-Quiz",
+      "linkGithub": "https://github.com/ClaireEberle/The-Tech-Spot",
       "linkSite":"https://the-tech-spot-blog.herokuapp.com/"
     },
     {

@@ -5,7 +5,7 @@ import jolly from  "../../../images/jolly.png"
 import stream from "../../../images/stream.png"
 import saveSeat from "../../../images/saveSeat.png"
 import popQuiz from "../../../images/popQuiz.png"
-import techspot from "../../../images/techspot.png"
+import techspot from "../../../images/techspot3.png"
 import weather from "../../../images/weather.png"
 import mountains from "../../../images/mountains.jpg"
 
@@ -33,7 +33,7 @@ export const Portfolio = () => {
       "title":"Save Your Seat",
       "description":"This project is nice",
       "linkGithub": "https://github.com/ClaireEberle/Save-Your-Seat",
-      "linkSite":"https://make-reservation.herokuapp.com/"
+      "linkSite":"https://save-you-seat.herokuapp.com/"
     },
     {
       "image": popQuiz,

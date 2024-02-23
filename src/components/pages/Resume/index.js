@@ -1,18 +1,19 @@
 import React from 'react'
 import './style.css';
+import pdf from '../../../images/ClaireEberle_Resume.pdf'
 
 export const Resume  = () => {
 
   const resumeBtn = () => {
     // using Java Script method to get PDF file
-    fetch('resume_ClaireEberle.pdf').then(response => {
+    fetch(pdf).then(response => {
         response.blob().then(blob => {
             // Creating new object of PDF file
             const fileURL = window.URL.createObjectURL(blob);
             // Setting various property values
             let alink = document.createElement('a');
             alink.href = fileURL;
-            alink.download = 'resume_ClaireEberle.pdf';
+            alink.download = 'ClaireEberle_Resume.pdf';
             alink.click();
         })
     })

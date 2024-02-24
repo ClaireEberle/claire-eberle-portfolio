@@ -9,6 +9,7 @@ import { Home } from "../pages/Home";
 import { validateEmail } from "../../utils/helpers";
 import { Cards } from "../Cards"
 
+
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("About");
   const [name, setName] = useState("");
@@ -53,8 +54,11 @@ export default function PortfolioContainer() {
   
   };
 
-const handleFormSubmit = (e) => {
-  e.preventDefault()
+
+const sendEmail = (e) => {
+ 
+   
+
   if(!validateEmail(email)){
     setErrorMessage(
       `Please enter a valid email address`
@@ -70,20 +74,10 @@ const handleFormSubmit = (e) => {
     'Please enter a message'
     )
   }
-  // axios({
-  //   method: "POST",
-  //   url: "/send",
-  //   data: ({ name, email, message})
-  // }).then ((response)=>{
-  //   if (response.data.status === 'success'){
-  //     alert("Message Sent.");
-      
-  //   }else if(response.data.status === 'fail'){
-  //     alert("Message failed to send.")
-  //   }
-  // })
-  // console.log("Submitted")
-  
+
+setEmail('');
+setMessage('');
+setName('');
 }
 
   const renderPage = () => {
@@ -100,7 +94,7 @@ const handleFormSubmit = (e) => {
       return <Resume />;
     }
 
-    return <Contact handleFormChange={handleFormChange} blank={blank} handleLoseFocus={handleLoseFocus} name={name} email={email} message={message} handleFormSubmit={handleFormSubmit} errorMessage={errorMessage}/>;
+    return <Contact handleFormChange={handleFormChange} blank={blank} handleLoseFocus={handleLoseFocus} name={name} email={email} message={message} handleFormSubmit={sendEmail} errorMessage={errorMessage}/>;
   };
   const handlePageChange = (page) => setCurrentPage(page);
 

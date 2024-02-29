@@ -76,7 +76,7 @@ const sendEmail = (e) => {
   }
 
 setEmail('');
-setMessage('');
+setMessage('message sent!');
 setName('');
 }
 

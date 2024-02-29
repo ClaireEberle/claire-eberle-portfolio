@@ -17,46 +17,46 @@ export const Portfolio = () => {
     {
       "image": jolly,
       "title":"Jolly Co-op",
-      "description":"Project 3",
+      "description":"",
       "linkGithub": "https://github.com/CaldwellDerek/jolly-co-op-frontend",
       "linkSite":"https://jollycoop.netlify.app/"
     },
     {
       "image": stream,
       "title":"Streamasaurus",
-      "description":"Project 1",
+      "description":"",
       "linkGithub": "https://github.com/wabarringer/project-1",
       "linkSite":"https://claireeberle.github.io/Streamosaurus/"
     },
     {
       "image": saveSeat,
       "title":"Save Your Seat",
-      "description":"This project is nice",
+      "description":"",
       "linkGithub": "https://github.com/ClaireEberle/Save-Your-Seat",
       "linkSite":"https://save-you-seat.herokuapp.com/"
     },
-    {
-      "image": popQuiz,
-      "title":"New Mexico Quiz",
-      "description":"This project is not good",
-      "linkGithub": "https://github.com/ClaireEberle/New-Mexico-Pop-Quiz",
-      "linkSite":"https://claireeberle.github.io/New-Mexico-Pop-Quiz/"
-    },
+    // {
+    //   "image": popQuiz,
+    //   "title":"New Mexico Quiz",
+    //   "description":"This project is not good",
+    //   "linkGithub": "https://github.com/ClaireEberle/New-Mexico-Pop-Quiz",
+    //   "linkSite":"https://claireeberle.github.io/New-Mexico-Pop-Quiz/"
+    // },
     {
       "image": techspot,
       "title":"Tech Blog",
-      "description":"This project needs improvement",
+      "description":"",
       "linkGithub": "https://github.com/ClaireEberle/The-Tech-Spot",
       "linkSite":"https://the-tech-spot-blog.herokuapp.com/"
     },
-    {
-      "image": weather,
-      "title":"Weather Tracker",
-      "description":"This project needs improvement",
-      "linkGithub": "https://github.com/ClaireEberle/Weather-Tracker",
-      "linkSite":"https://claireeberle.github.io/Weather-Tracker/"
+    // {
+    //   "image": weather,
+    //   "title":"Weather Tracker",
+    //   "description":"This project needs improvement",
+    //   "linkGithub": "https://github.com/ClaireEberle/Weather-Tracker",
+    //   "linkSite":"https://claireeberle.github.io/Weather-Tracker/"
       
-    }
+    // }
     
   ])
   return (

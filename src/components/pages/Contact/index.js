@@ -37,12 +37,7 @@ export const Contact = ({
     <div className="contact-container">
       <div className="contact-box">
         <h1 className="contact-form-box contactId">Contact me:</h1>
-        <form
-          ref={form}
-          className="contact-form-box"
-          onSubmit={sendEmail}
-          // method="POST"
-        >
+        <form ref={form} className="contact-form-box" onSubmit={sendEmail}>
           <label for="name">Name:</label>
           <br />
           <input

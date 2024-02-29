@@ -7,15 +7,14 @@ import { Resume } from "../pages/Resume";
 import { Contact } from "../pages/Contact";
 import { Home } from "../pages/Home";
 import { validateEmail } from "../../utils/helpers";
-import { Cards } from "../Cards"
-
+import { Cards } from "../Cards";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("About");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState('')
+  const [errorMessage, setErrorMessage] = useState("");
   const [blank, setBlank] = useState({
     name: false,
     email: false,
@@ -25,7 +24,6 @@ export default function PortfolioContainer() {
   const handleFormChange = (e) => {
     const inputType = e.target.name;
     const inputValue = e.target.value;
-    
 
     if (inputType === "name") {
       setName(inputValue);
@@ -36,56 +34,43 @@ export default function PortfolioContainer() {
     if (inputType === "message") {
       setMessage(inputValue);
     }
-    setBlank({...blank, [inputType]:false})
-    console.log(blank)
+    setBlank({ ...blank, [inputType]: false });
+    console.log(blank);
   };
-
-  
 
   const handleLoseFocus = (e) => {
-    const field = e.target.name
-    const value = e.target.value
+    const field = e.target.name;
+    const value = e.target.value;
     console.log(`lost focus of ${e.target.name}`);
-    if(value ==""){
-      setBlank({...blank, [field]:true})
+    if (value == "") {
+      setBlank({ ...blank, [field]: true });
     }
-      console.log(blank)
-      console.log(field)
-  
+    console.log(blank);
+    console.log(field);
   };
 
+  const sendEmail = (e) => {
+    if (!validateEmail(email)) {
+      setErrorMessage(`Please enter a valid email address`);
+    }
+    if (!name) {
+      setErrorMessage(`Please enter a name`);
+    }
+    if (!message) {
+      setErrorMessage("Please enter a message");
+    }
 
-const sendEmail = (e) => {
- 
-   
-
-  if(!validateEmail(email)){
-    setErrorMessage(
-      `Please enter a valid email address`
-    );
-  }
-  if(!name){
-    setErrorMessage(
-      `Please enter a name`
-    )
-  }
-  if(!message){
-    setErrorMessage(
-    'Please enter a message'
-    )
-  }
-
-setEmail('');
-setMessage('');
-setName('');
-}
+    setEmail("");
+    setMessage("message sent!");
+    setName("");
+  };
 
   const renderPage = () => {
     if (currentPage === "Home") {
       return <Home />;
     }
     if (currentPage === "About") {
-      return <About />; 
+      return <About />;
     }
     if (currentPage === "Portfolio") {
       return <Portfolio />;
@@ -94,7 +79,18 @@ setName('');
       return <Resume />;
     }
 
-    return <Contact handleFormChange={handleFormChange} blank={blank} handleLoseFocus={handleLoseFocus} name={name} email={email} message={message} handleFormSubmit={sendEmail} errorMessage={errorMessage}/>;
+    return (
+      <Contact
+        handleFormChange={handleFormChange}
+        blank={blank}
+        handleLoseFocus={handleLoseFocus}
+        name={name}
+        email={email}
+        message={message}
+        handleFormSubmit={sendEmail}
+        errorMessage={errorMessage}
+      />
+    );
   };
   const handlePageChange = (page) => setCurrentPage(page);
 
